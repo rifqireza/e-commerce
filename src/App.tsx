@@ -1,5 +1,6 @@
 import './App.css'
 import { Toaster } from 'react-hot-toast'
+import Button from './components/general/Button'
 
 function App() {
   return (
@@ -7,7 +8,7 @@ function App() {
     <Toaster />
     <div className="App">
       <div>
-        hello world
+        <Button variant='primary'>Submit</Button>
       </div>
     </div>
     </>

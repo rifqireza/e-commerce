@@ -5,7 +5,7 @@ export interface SuccessResponse<T> {
 }
 
 export interface ErrorResponse {
-  esponse?: {
+  response?: {
     data?: {
       success?: boolean;
       message?: string;
