@@ -5,6 +5,7 @@ import Cookies from "js-cookie";
 export const useAuthStore = create<AuthState>((set) => ({
   user: Cookies.get("user") ? JSON.parse(Cookies.get("user") as string) : null,
   token: Cookies.get("token") || "",
+  is_authenticate: false,
   permissions: Cookies.get("permissions")
     ? JSON.parse(Cookies.get("permissions") as string)
     : {},

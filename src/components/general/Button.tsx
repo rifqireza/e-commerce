@@ -24,7 +24,7 @@ const Button: React.FC<ButtonProps> = ({
   ...props
 }) => {
   const baseClasses =
-    "w-full border-4 border-black shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] font-black uppercase italic active:translate-x-[4px] active:translate-y-[4px] active:shadow-[1px_1px_0px_0px_rgba(0,0,0,1)] transition-all duration-75";
+    "w-full border-4 border-black shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] font-black uppercase active:translate-x-[4px] active:translate-y-[4px] active:shadow-[1px_1px_0px_0px_rgba(0,0,0,1)] transition-all duration-75";
 
   const variantClasses = {
     primary: "bg-green-400 text-black",
@@ -34,9 +34,9 @@ const Button: React.FC<ButtonProps> = ({
   };
 
   const sizeClasses = {
-    sm: "px-4 py-2 text-xs",
-    md: "px-8 py-4 text-sm",
-    lg: "px-16 py-8 text-base",
+    sm: "px-4 py-2 text-sm",
+    md: "px-8 py-4 text-base",
+    lg: "px-16 py-8 text-lg",
     icon: "p-2",
   };
 

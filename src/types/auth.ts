@@ -41,6 +41,8 @@ export interface AuthState {
   user: User| null;
   token: string;
   permissions: Permissions;
+  is_authenticate: boolean;
   setAuth: (data: LoginResponse) => void;
+  Authenticate: (is_authenticate: boolean) => void
   logout: () => void;
 }
