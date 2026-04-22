@@ -28,7 +28,7 @@ const Input: React.FC<InputProps> = ({
       {label && (
         <label
           htmlFor={id}
-          className="block uppercase text-black text-sm font-bold mb-1.5"
+          className="relative z-10 uppercase text-white px-4 py-2 ml-5 -mb-2 bg-black w-auto text-black text-sm font-bold mb-1.5"
         >
           {label}
         </label>
@@ -36,7 +36,7 @@ const Input: React.FC<InputProps> = ({
 
       <div className="relative">
         {startIcon && (
-          <div className="absolute inset-y-0 left-0 pl-3 pointer-events-none text-gray-400">
+          <div className="absolute text-lg mt-4 left-0 pl-3 pointer-events-none text-black">
             {startIcon}
           </div>
         )}
@@ -45,7 +45,7 @@ const Input: React.FC<InputProps> = ({
           id={id}
           type={inputType}
           name={id}
-          className={`w-full py-4 px-4 placeholder-[#9c9d9d] font-normal outline-none ${error ? "text-red-500" : "text-black"} border-4 border-black font-black uppercase italic bg-gray-200
+          className={`w-full py-4 px-4 placeholder-[#9c9d9d] font-normal -mt-2 outline-none ${error ? "text-red-500" : "text-black"} border-4 border-black font-blacks bg-gray-200
             ${error ? "border-red-500 focus:ring-red-500" : ""}
             ${isPassword ? "pr-10" : ""}
             ${startIcon ? "pl-10" : ""}
